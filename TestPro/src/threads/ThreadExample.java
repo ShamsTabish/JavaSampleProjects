@@ -17,7 +17,7 @@ public class ThreadExample {
 		Thread threadForTableOf6=new Thread(tableOf6,"\t\t\t\tTable of 6");
 		threadForTableOf6.start();
 		
-		
+		myTableOf2.join();
 		if(myTableOf2.isAlive() || myTableof4.isAlive() || threadForTableOf6.isAlive()){
 			Thread.sleep(2000);
 		}
